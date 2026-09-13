@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio & Resume of Jayakrishna T - Full Stack Software Engineer specializing in Java, Spring Boot, Angular, Microservices, and SQL.">
+  <meta name="keywords"
+    content="Jayakrishna, Java Developer, Spring Boot, Microservices, Angular, Full Stack Engineer, Resume, Chennai">
+  <meta name="author" content="Jayakrishna T">
+
+  <title>Jayakrishna T | Full Stack Software Engineer (Java & Microservices)</title>
+
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Ambient Background Accents -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- =========================================
+       NAVIGATION BAR
+       ========================================= -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-brand">
+        <div class="brand-icon">⚡</div>
+        <div class="nav-brand-text">
+          <span class="brand-name">Jayakrishna T</span>
+          <span class="brand-tag">Full Stack & Microservices</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#resume" class="nav-link">Resume & Experience</a></li>
+        <li><a href="#recruiter-summary" class="nav-link">HR Quick-Glance</a></li>
+        <li><a href="#architecture" class="nav-link">Architecture</a></li>
+        <!-- <li><a href="#simulator" class="nav-link">Live Flow Simulator</a></li> -->
+        <li><a href="#services" class="nav-link">Microservices</a></li>
+        <li><a href="#github-repos" class="nav-link">All 25 Repos</a></li>
+        <!-- <li><a href="#api-explorer" class="nav-link">API Explorer</a></li> -->
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- <button class="btn btn-secondary btn-sm" id="printResumeNavBtn" title="Print or Save Resume as PDF">
+          <span>🖨️ Print Resume</span>
+        </button> -->
+        <button class="theme-toggle-btn" id="themeToggleBtn" title="Toggle Theme" aria-label="Toggle Theme">🌙</button>
+        <a href="https://github.com/jayakrishna9655/Microservices-Quiz" target="_blank" rel="noopener noreferrer"
+          class="btn btn-primary btn-sm" id="navGithubBtn">
+          <span>GitHub</span> ↗
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- =========================================
+       HERO SECTION
+       ========================================= -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-status-pill">
+          <span class="pulse-green"></span>
+          <span>Open to Software Engineer & Backend Roles (Full-Time)</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm Jayakrishna T<br>
+          <span class="text-gradient">Full Stack Software Engineer</span>
+        </h1>
+
+        <p class="hero-description">
+          <strong>1+ years of production experience</strong> building resilient <strong>Java (Spring Boot)
+            microservices</strong>
+          and <strong>Angular</strong> applications for logistics platforms serving <strong>1,000+ active
+            users</strong>.
+          Specialized in RESTful API design, database query optimization, Spring Security (RBAC), and enterprise
+          distributed systems.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#resume" class="btn btn-primary" id="heroResumeBtn">
+            <span>📄 View Full Resume</span>
+          </a>
+          <a href="#simulator" class="btn btn-secondary" id="heroSimBtn">
+            <span>⚡ Simulate Microservices</span>
+          </a>
+          <button class="btn btn-secondary copy-btn-action" data-copy="+91-7397271589" id="heroCallBtn">
+            <span>📞 +91-7397271589</span>
+          </button>
+        </div>
+
+        <div class="hero-tech-badges">
+          <div class="tech-badge-item"><span>☕ Java 17 & OOP</span></div>
+          <div class="tech-badge-item"><span>🌱 Spring Boot & MVC</span></div>
+          <div class="tech-badge-item"><span>🅰️ Angular 9+ & TypeScript</span></div>
+          <div class="tech-badge-item"><span>🔒 Spring Security (RBAC)</span></div>
+          <div class="tech-badge-item"><span>🌐 Spring Cloud Gateway</span></div>
+          <div class="tech-badge-item"><span>🐬 MySQL Query Optimization</span></div>
+        </div>
+      </div>
+
+      <!-- Live Microservices Visual Card -->
+      <div class="hero-visual-card">
+        <div class="card-header-bar">
+          <div class="card-dots">
+            <span class="dot-red"></span>
+            <span class="dot-yellow"></span>
+            <span class="dot-green"></span>
+          </div>
+          <div class="card-badge-status">CANDIDATE: AVAILABLE NOW</div>
+        </div>
+
+        <div class="preview-mesh">
+          <div class="mesh-node">
+            <div class="node-left">
+              <div class="node-icon-box icon-gateway">💼</div>
+              <div>
+                <div class="node-title">EzeeShipping Production Experience</div>
+                <div class="node-subtitle">1+ Years • Microservices & Angular Migration</div>
+              </div>
+            </div>
+            <div class="node-port">May 2025 - Present</div>
+          </div>
+
+          <div class="mesh-node">
+            <div class="node-left">
+              <div class="node-icon-box icon-quiz">⚡</div>
+              <div>
+                <div class="node-title">Performance Optimization</div>
+                <div class="node-subtitle">Cut API Latency by 25% via DTOs & MySQL Indexing</div>
+              </div>
+            </div>
+            <div class="node-port">-25% Latency</div>
+          </div>
+
+          <div class="mesh-node">
+            <div class="node-left">
+              <div class="node-icon-box icon-question">👥</div>
+              <div>
+                <div class="node-title">Production Scale</div>
+                <div class="node-subtitle">Shipped features for 1,000+ active live users</div>
+              </div>
+            </div>
+            <div class="node-port">1,000+ Users</div>
+          </div>
+
+          <div class="mesh-node">
+            <div class="node-left">
+              <div class="node-icon-box icon-registry">🎓</div>
+              <div>
+                <div class="node-title">B.Sc. Computer Science</div>
+                <div class="node-subtitle">First Class with Distinction (CGPA: 7.8)</div>
+              </div>
+            </div>
+            <div class="node-port">2021 - 2024</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       HR DOSSIER & COMPLETE RESUME SECTION (PRINTABLE & HIGH READABILITY)
+       ========================================================================== -->
+  <section class="resume-dossier-section" id="resume">
+    <div class="container">
+      <div class="resume-paper-wrapper">
+
+        <!-- Header / Contact Info Bar -->
+        <div class="resume-header-block">
+          <div>
+            <h2 class="candidate-name">JAYAKRISHNA T</h2>
+            <div class="candidate-role">Full Stack Software Engineer | Java | Spring Boot | Angular | Microservices |
+              SQL</div>
+
+            <div class="candidate-contact-chips">
+              <span class="contact-chip">📍 Chennai, India</span>
+              <span class="contact-chip">📞 <a href="tel:+917397271589">+91-7397271589</a></span>
+              <span class="contact-chip">✉️ <a
+                  href="mailto:jayakrishna96555@gmail.com">jayakrishna96555@gmail.com</a></span>
+              <span class="contact-chip">🐙 <a href="https://github.com/jayakrishna9655" target="_blank"
+                  rel="noopener noreferrer">github.com/jayakrishna9655</a></span>
+            </div>
+          </div>
+
+          <div class="resume-actions-bar">
+            <button class="btn btn-primary btn-sm" id="printResumeBtn" onclick="window.print()">
+              <span>🖨️ Print / Save as PDF</span>
+            </button>
+            <button class="btn btn-secondary btn-sm copy-btn-action" data-copy="jayakrishna96555@gmail.com">
+              <span>📋 Copy Email</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Professional Summary -->
+        <div class="resume-sub-title"><i>📝</i> Professional Summary</div>
+        <div class="resume-summary-box">
+          <strong>Full-Stack Software Engineer with 1+ years of hands-on experience</strong> building Java (Spring Boot)
+          microservices
+          and Angular applications for production logistics platforms serving <strong>1,000+ active users</strong>.
+          Strong in RESTful API design,
+          MySQL query optimization, and Spring Security (Role-Based Access Control - RBAC), with end-to-end ownership
+          from schema design through backend services
+          to Angular front ends. Trained in Java full-stack development with a solid foundation in OOP and Agile
+          delivery.
+        </div>
+
+        <!-- Technical Skills Matrix -->
+        <div class="resume-sub-title"><i>🛠️</i> Technical Skills</div>
+        <div
+          style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin-bottom: 36px;">
+          <div
+            style="background: var(--bg-tertiary); padding: 14px 18px; border-radius: 8px; border: 1px solid var(--border-subtle);">
+            <strong style="color: var(--text-main); font-size: 0.9rem;">Core Java:</strong>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">OOP, Design Patterns, Data
+              Structures & Algorithms, Java 17</p>
+          </div>
+          <div
+            style="background: var(--bg-tertiary); padding: 14px 18px; border-radius: 8px; border: 1px solid var(--border-subtle);">
+            <strong style="color: var(--text-main); font-size: 0.9rem;">Backend & Microservices:</strong>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Spring Boot, Spring MVC, Spring
+              Security (RBAC), Spring Data JPA, Hibernate, RESTful APIs, Centralized Exception Handling, OpenFeign</p>
+          </div>
+          <div
+            style="background: var(--bg-tertiary); padding: 14px 18px; border-radius: 8px; border: 1px solid var(--border-subtle);">
+            <strong style="color: var(--text-main); font-size: 0.9rem;">Frontend & Mobile:</strong>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Angular 7–9, TypeScript,
+              JavaScript, HTML5, CSS3, Bootstrap, Ionic, Android Studio</p>
+          </div>
+          <div
+            style="background: var(--bg-tertiary); padding: 14px 18px; border-radius: 8px; border: 1px solid var(--border-subtle);">
+            <strong style="color: var(--text-main); font-size: 0.9rem;">Databases & Tools:</strong>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">MySQL (query optimization, schema
+              design, indexing), Git, GitHub, Postman, Eclipse, VS Code, Agile/Scrum</p>
+          </div>
+        </div>
+
+        <!-- Professional Experience -->
+        <div class="resume-sub-title"><i>💼</i> Professional Experience</div>
+        <div class="experience-timeline">
+          <div class="exp-item">
+            <div class="exp-header">
+              <span class="exp-role-company">Software Engineer • EzeeShipping, Chennai, India</span>
+              <span class="exp-period">May 2025 – Present</span>
+            </div>
+            <ul class="exp-bullet-list">
+              <li>
+                <span>Led the migration of the EzeeShipping Angular application from <strong>Angular 7 to Angular 9
+                    across 100+ components, services, and third-party libraries</strong>, resolving breaking changes and
+                  dependency upgrades.</span>
+              </li>
+              <li>
+                <span>Developed and maintained <strong>6+ Spring Boot microservices and REST APIs</strong> for
+                  logistics, booking, and shipment-tracking workflows, owning business logic, persistence
+                  (JPA/Hibernate), validation, and exception handling.</span>
+              </li>
+              <li>
+                <span><span class="exp-metric-badge">Cut average API payload latency by 25%</span> through DTO
+                  optimization; indexed high-volume MySQL transaction tables and refactored slow relational queries to
+                  speed up shipment reports.</span>
+              </li>
+              <li>
+                <span>Implemented <strong>Spring Security with Role-Based Access Control (RBAC)</strong> and automated
+                  session timeouts to protect sensitive admin routes.</span>
+              </li>
+              <li>
+                <span><strong>MeOnline Platform:</strong> Contributed to building the platform from the ground up
+                  (Spring Boot, JPA/Hibernate, MySQL, Angular), delivering backend REST APIs and their Angular
+                  integration with end-to-end validation and error handling.</span>
+              </li>
+              <li>
+                <span><strong>EsealStore:</strong> Maintained and enhanced a live application supporting <strong>1,000+
+                    active users</strong>; shipped new Angular features and resolved production issues across frontend
+                  and backend layers.</span>
+              </li>
+              <li>
+                <span><strong>Sodatra:</strong> Took ownership of the frontend architecture of an in-progress
+                  application; built new Angular components and fixed complex calculation and business-logic defects to
+                  stabilize it for deployment.</span>
+              </li>
+              <li>
+                <span><strong>Corporate Website & Mobile App:</strong> Redesigned the company website with responsive,
+                  mobile-first HTML/CSS/JavaScript; revived and redeployed a legacy Ionic/Angular mobile app used by
+                  100+ active users.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Key Projects -->
+        <div class="resume-sub-title"><i>🚀</i> Featured Projects</div>
+        <div class="resume-projects-grid">
+          <!-- Project 1: Distributed Microservices Quiz -->
+          <div class="resume-project-card">
+            <div class="res-proj-header">
+              <h4 class="res-proj-title">Distributed Microservices Quiz System</h4>
+              <div class="res-proj-tech">Java 17, Spring Boot, Spring Cloud Gateway, Eureka, OpenFeign, MySQL</div>
+            </div>
+            <ul class="res-proj-bullets">
+              <li>Architected 4 autonomous microservices (API Gateway, Service Registry, Quiz Svc, Question Svc) with
+                Eureka discovery.</li>
+              <li>Enforced 100% Database-Per-Service isolation between <code>microQuizdb</code> and
+                <code>microQuestiondb</code> with zero cross-database joins.
+              </li>
+              <li>Implemented QuestionWrapper DTO projections to mask correct answers from candidates, delegating
+                scoring securely server-side.</li>
+            </ul>
+            <div style="margin-top: auto; padding-top: 10px;">
+              <a href="#architecture" class="btn btn-secondary btn-sm" style="width: 100%;">Explore Architecture &
+                Simulator ↓</a>
+            </div>
+          </div>
+
+          <!-- Project 2: Warehouse Management System -->
+          <div class="resume-project-card">
+            <div class="res-proj-header">
+              <h4 class="res-proj-title">Warehouse Management System</h4>
+              <div class="res-proj-tech">Java 17, Spring Boot 3, Spring Security, JPA/Hibernate, MySQL, Angular,
+                Chart.js</div>
+            </div>
+            <ul class="res-proj-bullets">
+              <li>Built an inventory portal with authentication, RBAC, password encryption, DTOs, and database-backed
+                sessions with automated 30-minute invalidation.</li>
+              <li>Developed CRUD REST APIs with centralized exception handling (<code>@ControllerAdvice</code>) and
+                structured HTTP status responses.</li>
+              <li>Delivered stock tracking, inventory valuation, low-stock alerts, and Chart.js dashboards for stock
+                distribution and turnover.</li>
+            </ul>
+          </div>
+
+          <!-- Project 3: E-Commerce Web Application -->
+          <div class="resume-project-card">
+            <div class="res-proj-header">
+              <h4 class="res-proj-title">E-Commerce Web Application</h4>
+              <div class="res-proj-tech">Java, Spring Boot, Spring MVC, Spring Security, Angular, MySQL, Microservices
+              </div>
+            </div>
+            <ul class="res-proj-bullets">
+              <li>Designed a modular microservices platform with separate product catalog, cart, and order services over
+                a normalized MySQL schema of 10+ tables.</li>
+              <li>Implemented user registration, login, email verification, and password reset with Spring Security.
+              </li>
+              <li>Built responsive product browsing, dynamic cart price calculations, and automated email order
+                notifications in Angular.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education & Certifications -->
+        <div class="edu-cert-row">
+          <div class="edu-card">
+            <div class="resume-sub-title" style="margin-bottom: 14px; font-size: 1.1rem;"><i>🎓</i> Education</div>
+            <div class="item-main-title">Bachelor of Computer Science</div>
+            <div class="item-institution">Dhanraj Baid Jain College, Chennai</div>
+            <div class="item-meta">2021 – 2024 • First Class with Distinction • <strong>CGPA: 7.8</strong></div>
+          </div>
+
+          <div class="cert-card">
+            <div class="resume-sub-title" style="margin-bottom: 14px; font-size: 1.1rem;"><i>📜</i> Certifications</div>
+            <ul class="cert-list">
+              <li class="cert-item">
+                <strong style="font-size: 0.925rem; color: var(--text-main);">Java Full Stack with Angular & Spring
+                  Framework</strong>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Credo Systemz (6 Months Intensive
+                  Program)</span>
+              </li>
+              <li class="cert-item">
+                <strong style="font-size: 0.925rem; color: var(--text-main);">Diploma in Data Quality Analysis</strong>
+                <span style="font-size: 0.8rem; color: var(--text-dim);">Tech Mahindra Foundation (4 Months
+                  Program)</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       RECRUITER QUICK-GLANCE (HR SUMMARY)
+       ========================================= -->
+  <section class="recruiter-section" id="recruiter-summary">
+    <div class="container">
+      <div class="section-badge">
+        <span class="dot"></span>
+        <span>Recruiter & Hiring Manager Brief</span>
+      </div>
+      <h2 class="section-title">Why Hire Jayakrishna?</h2>
+      <p class="section-subtitle">
+        A quick, 30-second executive summary highlighting production impact, software design discipline, and full-stack
+        ownership.
+      </p>
+
+      <!-- Key Performance Counters -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number accent-1">1+ Yrs</div>
+          <div class="stat-label">Production Experience</div>
+          <div class="stat-desc">Hands-on microservices & Angular engineering at EzeeShipping</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number accent-2">25%</div>
+          <div class="stat-label">API Latency Reduction</div>
+          <div class="stat-desc">Through DTO optimization and MySQL query index refactoring</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number accent-3">1,000+</div>
+          <div class="stat-label">Active Users Supported</div>
+          <div class="stat-desc">Shipped and maintained live platforms (EsealStore, MeOnline)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number accent-4">100+</div>
+          <div class="stat-label">Components Migrated</div>
+          <div class="stat-desc">Led Angular 7 to Angular 9 enterprise application upgrade</div>
+        </div>
+      </div>
+
+      <!-- Core Value Propositions -->
+      <div class="hr-pitch-grid">
+        <div class="hr-pitch-card">
+          <div class="pitch-icon">🏛</div>
+          <h3 class="pitch-title">Full-Stack Ownership (End-to-End)</h3>
+          <p class="pitch-text">
+            Comfortable owning the complete feature lifecycle — from normalized MySQL table design and indexing, to
+            secure Spring Boot
+            REST microservices, up to interactive and modular Angular frontend components.
+          </p>
+          <div class="pitch-tags">
+            <span class="pitch-tag">Spring Boot 3</span>
+            <span class="pitch-tag">Angular 9+</span>
+            <span class="pitch-tag">MySQL Optimization</span>
+          </div>
+        </div>
+
+        <div class="hr-pitch-card">
+          <div class="pitch-icon">🛡</div>
+          <h3 class="pitch-title">Security & Clean Architecture</h3>
+          <p class="pitch-text">
+            Experience implementing Spring Security with Role-Based Access Control (RBAC), password hashing, automated
+            session timeout invalidation,
+            centralized exception handling (<code>@ControllerAdvice</code>), and DTO data encapsulation.
+          </p>
+          <div class="pitch-tags">
+            <span class="pitch-tag">Spring Security</span>
+            <span class="pitch-tag">RBAC</span>
+            <span class="pitch-tag">DTO Pattern</span>
+          </div>
+        </div>
+
+        <div class="hr-pitch-card">
+          <div class="pitch-icon">⚡</div>
+          <h3 class="pitch-title">Distributed Systems & Cloud Ready</h3>
+          <p class="pitch-text">
+            Demonstrated mastery in Spring Cloud Gateway with reactive WebFlux, Netflix Eureka service discovery,
+            declarative OpenFeign RPC,
+            and strict database-per-service isolation across distributed enterprise architectures.
+          </p>
+          <div class="pitch-tags">
+            <span class="pitch-tag">API Gateway</span>
+            <span class="pitch-tag">Netflix Eureka</span>
+            <span class="pitch-tag">OpenFeign</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       SYSTEM ARCHITECTURE SECTION
+       ========================================= -->
+  <section class="architecture-section" id="architecture">
+    <div class="container">
+      <div class="section-badge">
+        <span class="dot"></span>
+        <span>Interactive Architecture Map</span>
+      </div>
+      <h2 class="section-title">Cluster Topology & Data Flow</h2>
+      <p class="section-subtitle">
+        Click on any microservice node or database in the diagram below to inspect its responsibilities, endpoints,
+        configuration, and technology stack.
+      </p>
+
+      <div class="architecture-canvas-wrapper">
+        <div class="arch-controls">
+          <div class="arch-legend">
+            <div class="legend-item"><span class="legend-dot legend-discovery"></span> <span>Eureka Discovery</span>
+            </div>
+            <div class="legend-item"><span class="legend-dot legend-route"></span> <span>Gateway Routing (lb://)</span>
+            </div>
+            <div class="legend-item"><span class="legend-dot legend-rpc"></span> <span>OpenFeign REST RPC</span></div>
+            <div class="legend-item"><span class="legend-dot legend-db"></span> <span>Dedicated MySQL</span></div>
+          </div>
+          <span style="font-size: 0.85rem; color: var(--text-dim); font-weight: 600;">💡 Click any node to inspect
+            details</span>
+        </div>
+
+        <div class="arch-visual-container">
+          <!-- Discovery Service (Eureka) -->
+          <div class="arch-top-registry">
+            <div class="arch-service-node" data-service="registry" id="nodeEureka" title="Click to view Eureka details">
+              <span class="node-badge-tag badge-eureka">Discovery Registry</span>
+              <h4 style="font-size:1.1rem; margin-bottom:4px; color: var(--text-main);">SERVICE-REGISTRY (Eureka)</h4>
+              <p style="font-size:0.8rem; color:var(--text-dim);">Port: 8761 • Netflix Eureka Server</p>
+            </div>
+          </div>
+
+          <div class="connector-line-wrapper">
+            <span class="connector-pill">↕ Heartbeats & Dynamic Instance Discovery</span>
+          </div>
+
+          <!-- Mid Flow: Gateway & Downstream Services -->
+          <div class="arch-mid-flow">
+            <!-- Gateway Ingress -->
+            <div class="arch-service-node" data-service="gateway" id="nodeGateway"
+              title="Click to view API Gateway details">
+              <span class="node-badge-tag badge-gateway">Reverse Proxy & Load Balancer</span>
+              <h4 style="font-size:1.2rem; margin-bottom:4px; color: var(--text-main);">API-GATEWAY</h4>
+              <p style="font-size:0.85rem; color:var(--text-dim); margin-bottom:12px;">Port: 8765 • Spring Cloud Gateway
+              </p>
+              <div style="font-size:0.775rem; color:var(--text-muted); line-height:1.5;">
+                • Routes: <code>/quiz/**</code>, <code>/question/**</code><br>
+                • Reactive WebFlux + Reactor Netty<br>
+                • Client-Side Load Balancing
+              </div>
+            </div>
+
+            <!-- Downstream Services & DBs -->
+            <div class="arch-backend-cluster">
+              <!-- Quiz Service Column -->
+              <div class="backend-col">
+                <div class="arch-service-node" data-service="quiz" id="nodeQuiz"
+                  title="Click to view Quiz Service details">
+                  <span class="node-badge-tag badge-quiz">Orchestrator Service</span>
+                  <h4 style="font-size:1.1rem; margin-bottom:4px; color: var(--text-main);">QUIZ-SERVICE</h4>
+                  <p style="font-size:0.8rem; color:var(--text-dim); margin-bottom:10px;">Port: 8082 • Spring Boot</p>
+                  <p style="font-size:0.775rem; color:var(--text-muted);">
+                    Uses <code>@FeignClient("QUESTION-SERVICE")</code> to dynamically fetch questions and grade answers.
+                  </p>
+                </div>
+
+                <div class="arch-db-node" data-service="dbQuiz" title="Click to view Quiz Database details">
+                  <div class="db-icon">🗄️</div>
+                  <div class="db-details">
+                    <span class="db-name">microQuizdb</span>
+                    <span class="db-desc">MySQL 8.x • Quiz + Question IDs</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Question Service Column -->
+              <div class="backend-col">
+                <div class="arch-service-node" data-service="question" id="nodeQuestion"
+                  title="Click to view Question Service details">
+                  <span class="node-badge-tag badge-question">Data Owner Service</span>
+                  <h4 style="font-size:1.1rem; margin-bottom:4px; color: var(--text-main);">QUESTION-SERVICE</h4>
+                  <p style="font-size:0.8rem; color:var(--text-dim); margin-bottom:10px;">Port: 8081 • Spring Boot</p>
+                  <p style="font-size:0.775rem; color:var(--text-muted);">
+                    Owns question bank. Random selection via native SQL. DTO answer masking.
+                  </p>
+                </div>
+
+                <div class="arch-db-node" data-service="dbQuestion" title="Click to view Question Database details">
+                  <div class="db-icon">🗄️</div>
+                  <div class="db-details">
+                    <span class="db-name">microQuestiondb</span>
+                    <span class="db-desc">MySQL 8.x • Question Entity & Answers</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Inspector Drawer / Panel -->
+        <div class="service-inspector-panel" id="serviceInspectorPanel">
+          <div class="inspector-header">
+            <div class="inspector-title">
+              <span id="inspectorTitle">Service Details</span>
+              <span class="node-port" id="inspectorPort">Port</span>
+            </div>
+            <button class="inspector-close" id="inspectorCloseBtn" title="Close inspector">✕</button>
+          </div>
+
+          <div class="inspector-grid">
+            <div class="inspector-box">
+              <div class="inspector-box-title">Role & Architecture Pattern</div>
+              <p id="inspectorRole" style="font-size:0.9rem; color:var(--text-main); margin-bottom:8px;"></p>
+              <div class="inspector-box-title" style="margin-top:14px;">Technology Stack</div>
+              <p id="inspectorTech"
+                style="font-size:0.85rem; font-family:var(--font-mono); color:var(--accent-indigo);"></p>
+              <div class="inspector-box-title" style="margin-top:14px;">Key Implementation Highlights</div>
+              <ul class="inspector-list" id="inspectorPoints"></ul>
+            </div>
+
+            <div class="inspector-box">
+              <div class="inspector-box-title">Key Endpoints & Contracts</div>
+              <ul class="inspector-list" id="inspectorEndpoints"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       LIVE DISTRIBUTED FLOW SIMULATOR
+       ========================================= -->
+  <section class="simulator-section" id="simulator">
+    <div class="container">
+      <div class="section-badge">
+        <span class="dot"></span>
+        <span>Interactive Request Lifecycle</span>
+      </div>
+      <h2 class="section-title">Live Inter-Service Flow Simulator</h2>
+      <p class="section-subtitle">
+        Walk through how a distributed quiz lifecycle executes across the API Gateway, Eureka discovery, OpenFeign RPC,
+        and isolated databases.
+      </p>
+
+      <div class="simulator-card">
+        <!-- Stepper Indicators -->
+        <div class="sim-stepper">
+          <div class="sim-step-item active" data-step="1">
+            <div class="sim-step-bubble">1</div>
+            <span class="sim-step-title">Ingress Request</span>
+          </div>
+          <div class="sim-step-item" data-step="2">
+            <div class="sim-step-bubble">2</div>
+            <span class="sim-step-title">Dynamic Route</span>
+          </div>
+          <div class="sim-step-item" data-step="3">
+            <div class="sim-step-bubble">3</div>
+            <span class="sim-step-title">OpenFeign RPC</span>
+          </div>
+          <div class="sim-step-item" data-step="4">
+            <div class="sim-step-bubble">4</div>
+            <span class="sim-step-title">Safe DTO Delivery</span>
+          </div>
+          <div class="sim-step-item" data-step="5">
+            <div class="sim-step-bubble">5</div>
+            <span class="sim-step-title">Evaluation & Score</span>
+          </div>
+        </div>
+
+        <!-- Stage Content -->
+        <div class="sim-stage-content">
+          <!-- Narrative Left Column -->
+          <div class="sim-narrative-card">
+            <span class="sim-phase-badge" id="simPhaseBadge">STAGE 1: CLIENT REQUEST</span>
+            <h3 class="sim-title" id="simStageTitle">Client Dispatches Quiz Creation</h3>
+            <p class="sim-explanation" id="simStageExp">Loading step description...</p>
+
+            <div class="sim-actors-box" id="simActorsBox"></div>
+
+            <div class="sim-nav-buttons">
+              <button class="btn btn-secondary btn-sm" id="simPrevBtn">← Previous Step</button>
+              <button class="btn btn-primary btn-sm" id="simNextBtn">Next Step →</button>
+              <button class="btn btn-secondary btn-sm" id="simAutoPlayBtn">▶ Auto-Play Flow</button>
+            </div>
+          </div>
+
+          <!-- Code & Payload Right Column -->
+          <div class="sim-code-viewer">
+            <div class="code-header">
+              <div class="code-title">
+                <span class="code-badge-method method-post" id="simMethodBadge">POST</span>
+                <span id="simEndpointText">http://localhost:8765/quiz/create</span>
+              </div>
+              <button class="copy-snippet-btn" id="simCopyCodeBtn" title="Copy JSON payload">📋 Copy Payload</button>
+            </div>
+            <pre class="code-pre" id="simCodeContent">// Payload will render here...</pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       MICROSERVICES DEEP DIVE
+       ========================================= -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-badge">
+        <span class="dot"></span>
+        <span>Component Architecture</span>
+      </div>
+      <h2 class="section-title">Microservices Deep Dive</h2>
+      <p class="section-subtitle">
+        Each microservice is an autonomous, independently deployable module with its own build definition, dependencies,
+        and configuration.
+      </p>
+
+      <div class="services-cards-grid">
+        <!-- Card 1: API Gateway -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <div class="service-icon-wrap icon-gateway">🌐</div>
+            <span class="service-port-tag">Port 8765</span>
+          </div>
+          <h3 class="service-card-name">API Gateway Service</h3>
+          <span class="service-card-role">Reactive Gateway & Reverse Proxy</span>
+          <p class="service-card-desc">
+            Provides a unified entry point for all client requests. Evaluates routes via Java DSL, strips path prefixes,
+            and transparently load-balances downstream requests using Eureka service records.
+          </p>
+          <ul class="service-features-list">
+            <li><i>✔</i> Built on Spring WebFlux & Reactor Netty</li>
+            <li><i>✔</i> Java DSL RouteLocatorBuilder routing</li>
+            <li><i>✔</i> Direct & prefixed route matching with stripPrefix(1)</li>
+            <li><i>✔</i> Client-side load balancing via lb:// protocol</li>
+          </ul>
+          <div class="service-card-footer">
+            <span class="service-db-info">Stateless (No DB)</span>
+            <a href="#api-explorer" class="btn btn-secondary btn-sm">Explore Endpoints</a>
+          </div>
+        </div>
+
+        <!-- Card 2: Service Registry -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <div class="service-icon-wrap icon-registry">📡</div>
+            <span class="service-port-tag">Port 8761</span>
+          </div>
+          <h3 class="service-card-name">Service Registry</h3>
+          <span class="service-card-role">Netflix Eureka Discovery Hub</span>
+          <p class="service-card-desc">
+            Enables dynamic discovery so microservices can communicate using logical service IDs (e.g.
+            <code>QUIZ-SERVICE</code>,
+            <code>QUESTION-SERVICE</code>) rather than brittle, hardcoded IP addresses.
+          </p>
+          <ul class="service-features-list">
+            <li><i>✔</i> Netflix Eureka Server implementation</li>
+            <li><i>✔</i> Health monitoring via 30s heartbeat checks</li>
+            <li><i>✔</i> Dynamic scale-up/down instance discovery</li>
+            <li><i>✔</i> Integrated web administration dashboard</li>
+          </ul>
+          <div class="service-card-footer">
+            <span class="service-db-info">In-Memory Instance Registry</span>
+            <span class="node-badge-tag badge-eureka">Heartbeat Monitor</span>
+          </div>
+        </div>
+
+        <!-- Card 3: Quiz Service -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <div class="service-icon-wrap icon-quiz">🧩</div>
+            <span class="service-port-tag">Port 8082</span>
+          </div>
+          <h3 class="service-card-name">Quiz Service</h3>
+          <span class="service-card-role">Orchestrator & Lifecycle Manager</span>
+          <p class="service-card-desc">
+            Manages the creation, retrieval, and completion of quizzes. Persists quiz title and associated question IDs,
+            orchestrating interactions with the Question Service via declarative OpenFeign.
+          </p>
+          <ul class="service-features-list">
+            <li><i>✔</i> Declarative OpenFeign client (@FeignClient)</li>
+            <li><i>✔</i> Database-per-service pattern (microQuizdb)</li>
+            <li><i>✔</i> Decoupled data model: Stores questionIds array</li>
+            <li><i>✔</i> Handles score aggregation and status returns</li>
+          </ul>
+          <div class="service-card-footer">
+            <span class="service-db-info">MySQL: microQuizdb</span>
+            <a href="#api-explorer" class="btn btn-secondary btn-sm">Explore Endpoints</a>
+          </div>
+        </div>
+
+        <!-- Card 4: Question Service -->
+        <div class="service-card">
+          <div class="service-card-top">
+            <div class="service-icon-wrap icon-question">📝</div>
+            <span class="service-port-tag">Port 8081</span>
+          </div>
+          <h3 class="service-card-name">Question Service</h3>
+          <span class="service-card-role">Domain Owner & Grading Engine</span>
+          <p class="service-card-desc">
+            Authoritative source of question bank. Generates random questions by category using native SQL, produces
+            safe DTOs,
+            and securely grades user submissions server-side.
+          </p>
+          <ul class="service-features-list">
+            <li><i>✔</i> Native SQL ORDER BY RAND() query performance</li>
+            <li><i>✔</i> QuestionWrapper DTO strips rightAnswer</li>
+            <li><i>✔</i> Automated score calculation endpoint</li>
+            <li><i>✔</i> Database-per-service pattern (microQuestiondb)</li>
+          </ul>
+          <div class="service-card-footer">
+            <span class="service-db-info">MySQL: microQuestiondb</span>
+            <a href="#api-explorer" class="btn btn-secondary btn-sm">Explore Endpoints</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       ALL GITHUB REPOSITORIES & OPEN SOURCE (25 REPOS)
+       ========================================= -->
+  <section class="repos-section" id="github-repos">
+    <div class="container">
+      <div class="section-badge">
+        <span class="dot"></span>
+        <span>Open Source & GitHub Ecosystem</span>
+      </div>
+      <h2 class="section-title">All 25 GitHub Repositories</h2>
+      <p class="section-subtitle">
+        Explore my complete engineering portfolio spanning Distributed Microservices, Full-Stack Spring Boot + Angular
+        platforms, Enterprise OAuth2 Security, and Data Analytics.
+      </p>
+
+      <div class="repos-toolbar">
+        <div class="repos-search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" class="repos-search-input" id="repoSearchInput"
+            placeholder="Search by repo, tech (e.g. Angular, OAuth, MySQL, Gateway)..."
+            aria-label="Search repositories">
+        </div>
+
+        <div class="repos-filter-tabs">
+          <button class="repo-filter-btn active" data-category="all">All (25)</button>
+          <button class="repo-filter-btn" data-category="microservices">Microservices (4)</button>
+          <button class="repo-filter-btn" data-category="fullstack">Full-Stack Spring + Angular (6)</button>
+          <button class="repo-filter-btn" data-category="security">Security & OAuth (2)</button>
+          <button class="repo-filter-btn" data-category="core">Core Java & ORM (5)</button>
+          <button class="repo-filter-btn" data-category="frontend">Frontend & Angular 18 (4)</button>
+          <button class="repo-filter-btn" data-category="data">Data & Algorithms (4)</button>
+        </div>
+      </div>
+
+      <div
+        style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
+        <span id="reposCountBadge" style="font-size: 0.85rem; font-weight: 700; color: var(--text-dim);">Showing 25 of
+          25 Repositories</span>
+        <a href="https://github.com/jayakrishna9655?tab=repositories" target="_blank" rel="noopener noreferrer"
+          class="repo-link-action" style="font-size: 0.85rem;">
+          <span>View all on GitHub Profile</span> ↗
+        </a>
+      </div>
+
+      <div class="repos-grid" id="reposGrid">
+        <!-- Rendered dynamically via app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       API EXPLORER & PLAYGROUND
+       ========================================= -->
+  <section class="api-section" id="api-explorer">
+    <div class="container">
+      <div class="section-badge">
+        <span class="dot"></span>
+        <span>REST Contracts</span>
+      </div>
+      <h2 class="section-title">Interactive API Explorer</h2>
+      <p class="section-subtitle">
+        Inspect all RESTful endpoints exposed through the API Gateway and internal microservices. Click to expand
+        payloads and copy cURL commands.
+      </p>
+
+      <div class="api-explorer-card">
+        <div class="api-filter-tabs">
+          <button class="api-tab-btn active" data-filter="all">All Endpoints</button>
+          <button class="api-tab-btn" data-filter="gateway">API Gateway (Port 8765)</button>
+          <button class="api-tab-btn" data-filter="question">Question Service (Port 8081)</button>
+        </div>
+
+        <div class="api-endpoints-container" id="apiEndpointsList">
+          <!-- Dynamic Endpoints Injected via app.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       CONTACT & RECRUITER CTA SECTION
+       ========================================= -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="contact-card-banner">
+        <div>
+          <span class="hero-status-pill">
+            <span class="pulse-green"></span>
+            <span>Actively Seeking Full-Time Opportunities</span>
+          </span>
+          <h2 class="contact-title">Let's Connect & Build Together</h2>
+          <p class="contact-desc">
+            Looking for a Software Engineer who brings full-stack capability, production-tested microservices
+            experience,
+            and a clean code mindset? Reach out directly by phone, email, or explore my GitHub profile.
+          </p>
+
+          <div class="contact-points">
+            <div class="contact-point-item">
+              <div class="contact-point-icon">📞</div>
+              <div>
+                <span style="font-size:0.775rem; color:var(--text-dim); display:block;">Phone Number</span>
+                <a href="tel:+917397271589" class="contact-point-link">+91-7397271589</a>
+              </div>
+            </div>
+
+            <div class="contact-point-item">
+              <div class="contact-point-icon">✉️</div>
+              <div>
+                <span style="font-size:0.775rem; color:var(--text-dim); display:block;">Email Address</span>
+                <a href="mailto:jayakrishna96555@gmail.com" class="contact-point-link">jayakrishna96555@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-point-item">
+              <div class="contact-point-icon">🐙</div>
+              <div>
+                <span style="font-size:0.775rem; color:var(--text-dim); display:block;">GitHub Profile</span>
+                <a href="https://github.com/jayakrishna9655" target="_blank" rel="noopener noreferrer"
+                  class="contact-point-link">github.com/jayakrishna9655</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-actions-box">
+          <h4 class="contact-box-title">Quick Recruiter Actions</h4>
+          <p class="contact-box-sub">Get in touch directly or save credentials.</p>
+
+          <a href="mailto:jayakrishna96555@gmail.com?subject=Job%20Opportunity%20-%20Full%20Stack%20%2F%20Java%20Engineer"
+            class="btn btn-primary" id="contactEmailBtn">
+            <span>✉️ Send Direct Email</span>
+          </a>
+
+          <a href="tel:+917397271589" class="btn btn-secondary" id="contactCallBtn">
+            <span>📞 Call +91-7397271589</span>
+          </a>
+
+          <button class="btn btn-secondary copy-btn-action" data-copy="+91-7397271589" id="copyPhoneBtn">
+            <span>📋 Copy Phone Number</span>
+          </button>
+
+          <button class="btn btn-secondary copy-btn-action" data-copy="jayakrishna96555@gmail.com" id="copyEmailBtn">
+            <span>📋 Copy Email Address</span>
+          </button>
+
+          <button class="btn btn-secondary" onclick="window.print()" id="contactPrintBtn">
+            <span>🖨️ Print / Save Resume PDF</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================
+       FOOTER
+       ========================================= -->
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <strong>Jayakrishna T</strong> • Full Stack & Microservices Software Engineer • Chennai, India
+      </div>
+      <div>
+        Clean, semantic HTML5, CSS3, & JavaScript. Optimized for Recruiter & HR evaluation.
+      </div>
+      <div>
+        <a href="#hero" style="color: var(--accent-indigo); font-weight: 700;">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Container -->
+  <div class="toast-container"></div>
+
+  <!-- Custom JS -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>

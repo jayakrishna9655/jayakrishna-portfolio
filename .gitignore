@@ -1,0 +1,5 @@
+# Ignore scratch / temporary development scripts
+scratch/
+*.log
+.DS_Store
+Thumbs.db
