@@ -575,8 +575,8 @@ function renderApiItems(filter) {
   const container = document.getElementById('apiEndpointsList');
   if (!container) return;
 
-  const filtered = (filter === 'all') 
-    ? apiData 
+  const filtered = (filter === 'all')
+    ? apiData
     : apiData.filter(item => item.service === filter);
 
   container.innerHTML = filtered.map((item, idx) => `
@@ -605,7 +605,7 @@ function renderApiItems(filter) {
           <div class="api-detail-col">
             <div style="display:flex; justify-content:space-between; align-items:center;">
               <h5>cURL Command:</h5>
-              <button class="copy-snippet-btn" onclick="copyTextToClipboard(\`${item.curl.replace(/`/g, '\\`')}\`)">📋 Copy cURL</button>
+              <button class="copy-snippet-btn" onclick="copyTextToClipboard(\`${item.curl.replace(/`/g, '\\`')}\`)">Copy cURL</button>
             </div>
             <pre class="code-pre" style="padding:12px; font-size:0.75rem; color:#a5b4fc;">${item.curl}</pre>
           </div>
@@ -615,7 +615,7 @@ function renderApiItems(filter) {
   `).join('');
 }
 
-window.toggleApiItem = function(headerElement) {
+window.toggleApiItem = function (headerElement) {
   const item = headerElement.parentElement;
   item.classList.toggle('open');
 };
@@ -645,7 +645,7 @@ function initCopyHelpers() {
   }
 }
 
-window.copyTextToClipboard = function(text) {
+window.copyTextToClipboard = function (text) {
   navigator.clipboard.writeText(text).then(() => {
     showToast('Copied to clipboard!');
   }).catch(err => {
@@ -664,7 +664,7 @@ function showToast(message) {
 
   const toast = document.createElement('div');
   toast.className = 'toast';
-  toast.innerHTML = `<span>⚡</span> <span>${message}</span>`;
+  toast.innerHTML = `<span>✓</span> <span>${message}</span>`;
   container.appendChild(toast);
 
   setTimeout(() => {
@@ -970,7 +970,7 @@ function renderReposList() {
 
   const filtered = githubReposData.filter(repo => {
     const matchesCategory = (activeRepoFilter === 'all') || (repo.category === activeRepoFilter);
-    const matchesSearch = !repoSearchQuery || 
+    const matchesSearch = !repoSearchQuery ||
       repo.name.toLowerCase().includes(repoSearchQuery) ||
       repo.desc.toLowerCase().includes(repoSearchQuery) ||
       repo.tags.some(tag => tag.toLowerCase().includes(repoSearchQuery)) ||
@@ -997,7 +997,7 @@ function renderReposList() {
     <div class="repo-card" data-category="${repo.category}">
       <div class="repo-card-header">
         <h4 class="repo-card-title">
-          <span>📦</span>
+          <span>📂</span>
           <a href="${repo.url}" target="_blank" rel="noopener noreferrer">${repo.name}</a>
         </h4>
         <span class="repo-lang-badge ${repo.langClass}">${repo.lang}</span>
@@ -1011,7 +1011,7 @@ function renderReposList() {
 
       <div class="repo-card-footer">
         <button class="copy-snippet-btn" style="background:var(--bg-tertiary); color:var(--text-muted);" onclick="copyTextToClipboard('${repo.url}')" title="Copy repository URL">
-          📋 Copy URL
+          Copy URL
         </button>
         <a href="${repo.url}" target="_blank" rel="noopener noreferrer" class="repo-link-action">
           <span>View on GitHub</span> ↗
@@ -1020,3 +1020,68 @@ function renderReposList() {
     </div>
   `).join('');
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  initThemeToggle();
+  initFlowSimulator();
+  initArchitectureInspector();
+  initApiExplorer();
+  initScrollSpy();
+  initCopyHelpers();
+  initGithubRepos();
+  initProfileModal(); // <--- ADD THIS LINE
+});
+
+/* =========================================
+   3. PROFILE PHOTO POPUP MODAL
+   ========================================= */
+function initProfileModal() {
+  const trigger = document.getElementById('profilePhotoTrigger');
+  const modal = document.getElementById('profileModal');
+  const closeBtn = document.getElementById('profileModalClose');
+  const viewResumeBtn = document.getElementById('modalViewResumeBtn');
+
+  // Open modal when clicking the navbar avatar
+  if (trigger && modal) {
+    trigger.addEventListener('click', (e) => {
+      e.preventDefault();
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+  }
+
+  // Close modal when clicking the close button
+  if (closeBtn && modal) {
+    closeBtn.addEventListener('click', () => {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  }
+
+  // Close modal when clicking outside the card
+  if (modal) {
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+
+  // Close modal when clicking "View Resume" button
+  if (viewResumeBtn && modal) {
+    viewResumeBtn.addEventListener('click', () => {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+  }
+
+  // Close modal with Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal && modal.classList.contains('active')) {
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  });
+}
+
