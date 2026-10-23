@@ -52,7 +52,7 @@
         <li><a href="#architecture" class="nav-link">Architecture</a></li>
         <!-- <li><a href="#simulator" class="nav-link">Live Flow Simulator</a></li> -->
         <li><a href="#services" class="nav-link">Microservices</a></li>
-        <li><a href="#github-repos" class="nav-link">All 25 Repos</a></li>
+        <li><a href="#github-repos" class="nav-link">All 26 Repos</a></li>
         <!-- <li><a href="#api-explorer" class="nav-link">API Explorer</a></li> -->
         <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
@@ -115,7 +115,7 @@
         <div class="hero-tech-badges">
           <div class="tech-badge-item"><span> Java 17 & OOP</span></div>
           <div class="tech-badge-item"><span> Spring Boot & MVC</span></div>
-          <div class="tech-badge-item"><span> Angular 9+ & TypeScript</span></div>
+          <div class="tech-badge-item"><span> Angular 19 & Micro-Frontends</span></div>
           <div class="tech-badge-item"><span> Spring Security & OAuth2</span></div>
           <div class="tech-badge-item"><span> Spring Cloud Gateway</span></div>
           <div class="tech-badge-item"><span> MySQL Query Optimization</span></div>
@@ -250,7 +250,7 @@
           <div
             style="background: var(--bg-tertiary); padding: 14px 18px; border-radius: 8px; border: 1px solid var(--border-subtle);">
             <strong style="color: var(--text-main); font-size: 0.9rem;">Frontend & Mobile:</strong>
-            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Angular, TypeScript, JavaScript, HTML, CSS, Bootstrap, Ionic</p>
+            <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px;">Angular 19 & 7–9, Micro-Frontends (Native Federation, Module Federation), Angular Signals, Standalone Components, TypeScript 5.7, HTML5, CSS3, Bootstrap, Ionic</p>
           </div>
           <div
             style="background: var(--bg-tertiary); padding: 14px 18px; border-radius: 8px; border: 1px solid var(--border-subtle);">
@@ -313,7 +313,24 @@
             </div>
           </div>
 
-          <!-- Project 2: Warehouse Management System -->
+          <!-- Project 2: DevPulse Enterprise Micro-Frontend Platform -->
+          <div class="resume-project-card">
+            <div class="res-proj-header">
+              <h4 class="res-proj-title">DevPulse — Enterprise Micro-Frontend Platform</h4>
+              <div class="res-proj-tech">Angular 19, TypeScript 5.7, Native Federation, Standalone Components, Angular Signals, CustomEvent EventBus</div>
+            </div>
+            <ul class="res-proj-bullets">
+              <li><span>Architected a multi-project monorepo workspace decoupling Host Shell (:4200), HR Remote (:4201), and DEV Remote (:4202) with zero build-time coupling.</span></li>
+              <li><span>Engineered dynamic runtime module loading using <code>@angular-architects/native-federation</code> and remote manifests with shared core singletons (<code>@angular/core</code>, <code>rxjs</code>).</span></li>
+              <li><span>Implemented a decoupled cross-MFE EventBus broadcasting domain events (<code>CANDIDATE_HIRED</code>, <code>ENGINEER_PROMOTED</code>) allowing isolated remotes to reactively sync state without shared dependencies.</span></li>
+            </ul>
+            <div style="margin-top: auto; padding-top: 10px;">
+              <a href="https://github.com/jayakrishna9655/Micro-Frontend-devpulse-workspace" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm" style="width: 100%;">View Repository on GitHub →</a>
+            </div>
+          </div>
+
+
+          <!-- Project 3: Warehouse Management System -->
           <div class="resume-project-card">
             <div class="res-proj-header">
               <h4 class="res-proj-title">Warehouse Management System</h4>
@@ -327,7 +344,7 @@
             </ul>
           </div>
 
-          <!-- Project 3: E-Commerce Web Application -->
+          <!-- Project 4: E-Commerce Web Application -->
           <div class="resume-project-card">
             <div class="res-proj-header">
               <h4 class="res-proj-title">E-Commerce Web Application</h4>
@@ -341,7 +358,7 @@
             </ul>
           </div>
 
-          <!-- Project 4: Spring Security OAuth2 & OIDC Service -->
+          <!-- Project 5: Spring Security OAuth2 & OIDC Service -->
           <div class="resume-project-card">
             <div class="res-proj-header">
               <h4 class="res-proj-title">Spring Security OAuth2 & OIDC Service</h4>
@@ -468,9 +485,10 @@
             and strict database-per-service isolation across distributed enterprise architectures.
           </p>
           <div class="pitch-tags">
-            <span class="pitch-tag">API Gateway</span>
+            <span class="pitch-tag">Spring Cloud Gateway</span>
             <span class="pitch-tag">Netflix Eureka</span>
-            <span class="pitch-tag">OpenFeign</span>
+            <span class="pitch-tag">Angular 19 MFE</span>
+            <span class="pitch-tag">Native Federation</span>
           </div>
         </div>
       </div>
@@ -805,7 +823,7 @@
   </section>
 
   <!-- =========================================
-       ALL GITHUB REPOSITORIES & OPEN SOURCE (25 REPOS)
+       ALL GITHUB REPOSITORIES & OPEN SOURCE (26 REPOS)
        ========================================= -->
   <section class="repos-section" id="github-repos">
     <div class="container">
@@ -813,7 +831,7 @@
         <span class="dot"></span>
         <span>Open Source & GitHub Ecosystem</span>
       </div>
-      <h2 class="section-title">All 25 GitHub Repositories</h2>
+      <h2 class="section-title">All 26 GitHub Repositories</h2>
       <p class="section-subtitle">
         Explore my complete engineering portfolio spanning Distributed Microservices, Full-Stack Spring Boot + Angular
         platforms, Enterprise OAuth2 Security, and Data Analytics.
@@ -828,20 +846,20 @@
         </div>
 
         <div class="repos-filter-tabs">
-          <button class="repo-filter-btn active" data-category="all">All (25)</button>
+          <button class="repo-filter-btn active" data-category="all">All (26)</button>
           <button class="repo-filter-btn" data-category="microservices">Microservices (4)</button>
           <button class="repo-filter-btn" data-category="fullstack">Full-Stack Spring + Angular (6)</button>
           <button class="repo-filter-btn" data-category="security">Security & OAuth (2)</button>
           <button class="repo-filter-btn" data-category="core">Core Java & ORM (5)</button>
-          <button class="repo-filter-btn" data-category="frontend">Frontend & Angular 18 (4)</button>
+          <button class="repo-filter-btn" data-category="frontend">Micro-Frontends & Angular (5)</button>
           <button class="repo-filter-btn" data-category="data">Data & Algorithms (4)</button>
         </div>
       </div>
 
       <div
         style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
-        <span id="reposCountBadge" style="font-size: 0.85rem; font-weight: 700; color: var(--text-dim);">Showing 25 of
-          25 Repositories</span>
+        <span id="reposCountBadge" style="font-size: 0.85rem; font-weight: 700; color: var(--text-dim);">Showing 26 of
+          26 Repositories</span>
         <a href="https://github.com/jayakrishna9655?tab=repositories" target="_blank" rel="noopener noreferrer"
           class="repo-link-action" style="font-size: 0.85rem;">
           <span>View all on GitHub Profile</span> ↗

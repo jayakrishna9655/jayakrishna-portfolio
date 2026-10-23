@@ -704,9 +704,18 @@ function initScrollSpy() {
 }
 
 /* =========================================
-   7. GITHUB REPOSITORIES EXPLORER (25 REPOS)
+   7. GITHUB REPOSITORIES EXPLORER (26 REPOS)
    ========================================= */
 const githubReposData = [
+  {
+    name: 'Micro-Frontend-devpulse-workspace',
+    category: 'frontend',
+    lang: 'TypeScript',
+    langClass: 'lang-typescript',
+    desc: 'Enterprise Micro-Frontend (MFE) platform built on Angular 19 and Native Federation, orchestrating an independent Shell Host (:4200) with HR (:4201) and DEV (:4202) remotes via decoupled CustomEvent EventBus.',
+    tags: ['Angular 19', 'Micro-Frontends', 'Native Federation', 'TypeScript 5.7', 'EventBus', 'Signals', 'Monorepo'],
+    url: 'https://github.com/jayakrishna9655/Micro-Frontend-devpulse-workspace'
+  },
   {
     name: 'Microservices-Quiz',
     category: 'microservices',
