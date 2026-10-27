@@ -847,8 +847,8 @@ const githubReposData = [
     category: 'core',
     lang: 'Java',
     langClass: 'lang-java',
-    desc: 'Spring MVC architecture demonstrating DispatcherServlet, Model-View-Controller patterns, form binding, and centralized exception advice.',
-    tags: ['Spring MVC', 'DispatcherServlet', 'Controllers', 'Validation'],
+    desc: 'Spring MVC Web Application featuring a comprehensive 47-test JUnit 5 suite covering isolated controller unit tests, @WebMvcTest MockMvc slice integration tests, and @ParameterizedTest boundary validations.',
+    tags: ['Spring MVC', 'JUnit 5', 'MockMvc', 'Parameterized Tests', 'TDD', 'AssertJ'],
     url: 'https://github.com/jayakrishna9655/SpringMVC'
   },
   {
